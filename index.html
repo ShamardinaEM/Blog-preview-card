@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/images/favicon-32x32.png"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+
+        <title>Frontend Mentor | Blog preview card</title>
+
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            body {
+                height: 98vh;
+                font-family: Figtree;
+                background-color: hsl(47, 88%, 63%);
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .wrapper {
+                margin: auto 0;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                background-color: hsl(0, 0%, 100%);
+                border: 2px solid hsl(0, 0%, 7%);
+                border-radius: 15px;
+                box-shadow: 7px 7px hsl(0, 0%, 7%);
+                width: 350px;
+                padding: 20px;
+            }
+            .wrapper img {
+                border-radius: 10px;
+                width: 100%;
+            }
+            .author {
+                font-weight: 700;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+            .author img {
+                width: 40px;
+                height: 40px;
+            }
+            .attribution {
+                font-weight: 600;
+                font-size: 0.6875rem;
+                text-align: center;
+            }
+            .attribution a {
+                color: hsl(228, 45%, 44%);
+            }
+            .tag {
+                border-radius: 5px;
+                font-weight: 700;
+                text-align: center;
+                background-color: hsl(47, 88%, 63%);
+                padding: 5px 10px;
+                width: 85px;
+            }
+            h2 {
+                margin: 0;
+                transition: 0.3s;
+            }
+            h2:hover {
+                color: hsl(47, 88%, 63%);
+                cursor: pointer;
+            }
+            .date {
+                font-weight: 500;
+            }
+            .desc {
+                color: hsl(0, 0%, 42%);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <img
+                src="./assets/images/illustration-article.svg"
+                alt="article-illustration"
+            />
+            <div class="tag">Learning</div>
+            <div class="date">Published 21 Dec 2023</div>
+            <h2>HTML & CSS foundations</h2>
+            <div class="desc">
+                These languages are the backbone of every website, defining
+                structure, content, and presentation. Greg Hooper
+            </div>
+            <div class="author">
+                <img src="/assets/images/image-avatar.webp" alt="avatar" />
+                <p>Greg Hooper</p>
+            </div>
+        </div>
+        <footer class="attribution">
+            Challenge by
+            <a
+                href="https://www.frontendmentor.io?ref=challenge"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Frontend Mentor</a
+            >. Coded by
+            <a
+                href="https://github.com/ShamardinaEM"
+                target="_blank"
+                rel="noopener noreferrer"
+                >ShamardinaEM</a
+            >.
+        </footer>
+    </body>
+</html>
